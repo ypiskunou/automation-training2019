@@ -1,0 +1,98 @@
+TC Name:	Make a search for room not entering destination
+	TC ID: 		1
+		Step #:		1. Entered arival date 14.11.2019	
+		Expected result:	Hint appearance	(pass)
+		Comment:			Hint is calender-like pop-up
+
+		Step #:		2. Entered departure date 17.11.2019	
+		Expected result:	Hint appearance	(pass)
+		Comment:			Hint is calender-like pop-up
+
+		Step #:		3. Hit button Start search	
+		Expected result:	Error due to destination not defined (fail)
+		Comment:			Redirection to page with all offers instead
+
+
+TC Name:	Make a search for room not entering dates
+	TC ID: 		2
+		Step #:		1. Entered destination Rome 	
+		Expected result:	Hint appearance	with exact place (pass)
+		Comment:			Hint is extandable menu on events or only rooms or rooms defined more precisely geographically
+
+		Step #:		2. Hit button Start search
+		Expected result:	Error message due to destination not defined (fail)
+		Comment:			Redirection to page with all offers
+
+
+
+TC Name:	Manual enter of date
+	TC ID: 		3
+		Step #:		1. Entered arival date 31.12.0067
+		Expected result:	Error message on impossibility of date (fail)
+		Comment:		
+
+		Step #:		2. Entered departure date 18.12.0054 
+		Expected result:	Error message on impossibility of date (fail)
+		Comment:	
+
+		Step #:		3. Entered destination - Rome 
+		Expected result:	Hint appearance	with exact place (pass)
+		Comment:	
+
+		Step #:		4. Hit button Start search	
+		Expected result:	Error due to invalid date (fail)
+		Comment:			Page with common offers is given instead
+
+
+TC Name:	Manually edit date
+	TC ID: 		4
+		Step #:		1. Entered arival date manually as 23.03.0015
+		Expected result:	Error message on impossibility of date (fail)
+		Comment:			
+
+		Step #:		2. Edit year manually (by keyboard)	
+		Expected result:	Length is restricted by 4 symbols (fail)
+		Comment:			Length is restricted by 6 symbols
+
+		Step #:		3. Hit button Start search	
+		Expected result:	Error due to invalid date (fail)
+		Comment:			Page with common offers is given instead
+
+
+TC Name:	Change destination on results page
+	TC ID: 		5
+		Step #:		1. Search on rooms in Minsk - at the search form were added destination-Minsk, arrival date-31.12.2019, departure date- 8.01.2020, search button was hit
+		Expected result:	page with offers	(pass)
+		Comment:			
+
+		Step #:		2. Change Minsk on Chicago	
+		Expected result:	Results for Chicago on the same time span (pass)
+		Comment:			
+
+
+TC Name:	Make a preorder
+	TC ID: 		6
+		Step #:		1. Entered arival date 14.12.2019	
+		Expected result:	Hint appearance	(pass)
+		Comment:			Hint is calender-like pop-up
+
+		Step #:		2. Entered departure date 17.12.2019	
+		Expected result:	Hint appearance	(pass)
+		Comment:			
+
+		Step #:		3. Entered destination - Chicago 
+		Expected result:	Hint appearance	with exact place (pass)
+		Comment:			
+
+		Step #:		4. Hit button search
+		Expected result:	New tab with detailed info was opened (pass)
+		Comment:			
+
+		Step #:		5. Hit button Ask for booking 
+		Expected result:	Appearance of booking calculation form with exact sum for price (pass)
+		Comment:			
+
+		Step #:		6. Hit confirmation button Ask for booking 
+		Expected result:	Inqire for registration (pass)
+		Comment:			
+
